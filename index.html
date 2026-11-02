@@ -1,0 +1,531 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amit Yadav | Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080d18;
+    color: white;
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #101827;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #263449;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* COMMON SECTION */
+section {
+    padding: 85px 10%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 35px;
+}
+
+.section-title span {
+    color: #38bdf8;
+}
+
+/* HOME */
+.hero {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hero h3 {
+    color: #a5b4fc;
+    font-size: 23px;
+}
+
+.hero h1 {
+    font-size: clamp(40px, 7vw, 65px);
+    margin: 10px 0;
+}
+
+.hero h1 span {
+    color: #38bdf8;
+}
+
+.hero p {
+    max-width: 600px;
+    color: #b7c3d4;
+    margin: 15px 0;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    background: #0ea5e9;
+    color: white;
+    padding: 12px 23px;
+    border-radius: 7px;
+    text-decoration: none;
+    margin-top: 12px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0284c7;
+    transform: translateY(-3px);
+}
+
+/* ABOUT */
+.about-content {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+    color: #b7c3d4;
+    font-size: 17px;
+}
+
+/* SKILLS AND PROJECTS */
+.skills-container,
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #111c2e;
+    padding: 25px;
+    border: 1px solid #263449;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    border-color: #38bdf8;
+}
+
+.card h3 {
+    color: #38bdf8;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #b7c3d4;
+    font-size: 15px;
+}
+
+.card span {
+    display: inline-block;
+    color: #94a3b8;
+    margin-top: 12px;
+    font-size: 13px;
+}
+
+/* EDUCATION */
+.education {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+.education .card {
+    margin-bottom: 18px;
+}
+
+/* CONTACT */
+.contact-content {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+.contact-content p {
+    color: #b7c3d4;
+    margin: 12px;
+}
+
+.contact-content a:not(.btn) {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+    background: #101827;
+    text-align: center;
+    padding: 22px;
+    color: #94a3b8;
+    border-top: 1px solid #263449;
+}
+
+/* MOBILE RESPONSIVE */
+@media(max-width: 650px) {
+    header {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0;
+        font-size: 13px;
+    }
+
+    section {
+        padding: 65px 7%;
+    }
+
+    .hero {
+        min-height: 70vh;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <div class="logo">Amit Yadav</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HOME SECTION -->
+<section class="hero" id="home">
+
+    <h3>Hello, I'm</h3>
+
+    <h1>Amit <span>Yadav</span></h1>
+
+    <h3 id="typing">Python Developer</h3>
+
+    <p>
+        I am a B.Tech Computer Science student
+        passionate about programming, web development
+        and exploring new technologies.
+
+        I enjoy learning new skills and building
+        useful real-world projects.
+    </p>
+
+    <a href="#projects" class="btn">
+        Explore My Projects
+    </a>
+
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about">
+
+    <h2 class="section-title">
+        About <span>Me</span>
+    </h2>
+
+    <div class="about-content">
+
+        <p>
+            I am Amit Yadav, a Computer Science Engineering
+            studen at AKTU lucknow 
+
+            I am interested in Python programming,
+            Data Structures and Algorithms, and
+            Web Development.
+
+            My goal is to improve my technical skills,
+            build real-world projects and grow
+            as a software developer.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- SKILLS SECTION -->
+<section id="skills">
+
+    <h2 class="section-title">
+        My <span>Skills</span>
+    </h2>
+
+    <div class="skills-container">
+
+        <div class="card">
+            <h3>Python</h3>
+            <p>
+                Learning Python programming
+                and problem solving.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>HTML</h3>
+            <p>
+                Creating the structure
+                of modern websites.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>CSS</h3>
+            <p>
+                Designing responsive
+                and attractive web pages.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>JavaScript</h3>
+            <p>
+                Learning interactive
+                website development.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Data Structures</h3>
+            <p>
+                Learning Data Structures
+                and Algorithms.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PROJECTS SECTION -->
+<section id="projects">
+
+    <h2 class="section-title">
+        My <span>Projects</span>
+    </h2>
+
+    <div class="projects-container">
+
+        <div class="card">
+
+            <h3>01. Python Practice</h3>
+
+            <p>
+                A collection of Python programming
+                practice programs and coding exercises
+                to improve problem-solving skills.
+            </p>
+
+            <span>Python | Programming</span>
+
+        </div>
+
+        <div class="card">
+
+            <h3>02. Student Career Guidance</h3>
+
+            <p>
+                A website designed to help students
+                explore career options and get
+                useful career guidance.
+            </p>
+
+            <span>HTML | CSS | JavaScript</span>
+
+            <br>
+
+            <a
+                href="https://sainiravi9759-png.github.io/smart-career-guidance/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn">
+
+                Visit Live Project ↗
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- EDUCATION SECTION -->
+<section id="education">
+
+    <h2 class="section-title">
+        My <span>Education</span>
+    </h2>
+
+    <div class="education">
+
+        <div class="card">
+
+            <h3>Bachelor of Technology (B.Tech)</h3>
+
+            <p>Computer Science Engineering</p>
+
+            <p>AKTU Lucknow</p>
+
+            <span>Currently Pursuing</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact">
+
+    <h2 class="section-title">
+        Contact <span>Me</span>
+    </h2>
+
+    <div class="contact-content">
+
+        <p>
+            Thank you for visiting my portfolio.
+            Feel free to connect with me.
+        </p>
+
+        <a
+            href="mailto:aamit37361@gmail.com"
+            class="btn">
+
+            Send Me an Email
+
+        </a>
+
+        <p>
+            Email:
+            <a href="mailto:aamit37361@gmail.com">
+                aamit37361@gmail.com
+            </a>
+        </p>
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+    <p>
+        © <span id="year"></span>
+        Amit yadav. All Rights Reserved.
+    </p>
+
+</footer>
+
+<!-- JAVASCRIPT -->
+<script>
+
+// Typing Animation
+const words = [
+    "Python Developer",
+    "Computer Science Student",
+    "Web Development Learner",
+    "Future Software Developer"
+];
+
+let wordIndex = 0;
+let charIndex = 0;
+let deleting = false;
+
+function typeEffect() {
+
+    const element = document.getElementById("typing");
+    const currentWord = words[wordIndex];
+
+    if (!deleting) {
+
+        element.textContent =
+            currentWord.substring(0, charIndex + 1);
+
+        charIndex++;
+
+        if (charIndex === currentWord.length) {
+
+            deleting = true;
+
+            setTimeout(typeEffect, 1200);
+            return;
+        }
+
+    } else {
+
+        element.textContent =
+            currentWord.substring(0, charIndex - 1);
+
+        charIndex--;
+
+        if (charIndex === 0) {
+
+            deleting = false;
+
+            wordIndex = (wordIndex + 1) % words.length;
+        }
+    }
+
+    setTimeout(typeEffect, deleting ? 60 : 100);
+}
+
+// Automatically Update Year
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+// Start Animation
+typeEffect();
+
+</script>
+
+</body>
+</html>
